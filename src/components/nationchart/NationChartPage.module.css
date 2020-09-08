@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.filter {
+    flex: 0 0 auto;
+}
+.graph {
+    flex: 1 1 auto;
+}

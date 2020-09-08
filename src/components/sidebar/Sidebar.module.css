@@ -1,0 +1,25 @@
+
+.container {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.link:hover {
+    background-color: darkgray;
+}
+.active {
+    background-color: #e8e8f0;
+}

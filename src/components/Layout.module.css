@@ -1,0 +1,40 @@
+
+.containerArea {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftSidebarArea {
+    flex: 0 0 auto;
+    background-color: lightgrey;
+    overflow: hidden;
+    transition: width 400ms ease-out;
+    border-right: 1px solid darkgray;
+}
+
+.rightMainArea {
+
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.contentArea {
+    flex-direction: row;
+    min-height: 100%;
+    background-color: #e8e8f0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 16px;
+    flex: 1 1 auto;
+}
