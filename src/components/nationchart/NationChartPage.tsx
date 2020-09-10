@@ -6,6 +6,7 @@ import React from "react";
 import {Card} from "@blueprintjs/core";
 import styles from "./NationChartPage.module.css";
 import {Filter} from "../filter/Filter";
+import {NationMap} from "../nationmap/NationMap";
 
 // type NationChart = typeof Chart<NationStatistics>;
 
@@ -37,5 +38,6 @@ export function NationChartPage() {
             <div style={{fontWeight: "bolder", marginBottom: "16px"}}>Chart</div>
             <Chart dataPoints={dataPoints} data={nationStatistics.data} />
         </Card>
+
     </div>);
 }

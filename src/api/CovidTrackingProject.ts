@@ -31,7 +31,7 @@ export interface NationStatistics {
 }
 
 export async function getNationDaily() {
-    return (await axios.get<NationStatistics[]>(baseUrl + "v1/us/daily.json")).data;
+    return (await axios.get<NationStatistics[]>(baseUrl + "v1/us/daily.json")).data.reverse();
 }
 
 export interface StateStatistics {
@@ -84,8 +84,8 @@ export interface StateStatistics {
     totalTestsViral: number
 }
 
-export async function getStatesDaily(): Promise<StateStatistics[]> {
-    return (await axios.get<StateStatistics[]>(baseUrl + "v1/states/daily.json")).data as StateStatistics[];
+export async function getStatesCurrent(): Promise<StateStatistics[]> {
+    return ((await axios.get<StateStatistics[]>(baseUrl + "v1/states/current.json")).data as StateStatistics[]);
 }
 
 

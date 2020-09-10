@@ -1,0 +1,17 @@
+.map {
+    fill: #61dafb;
+    stroke: white;
+    stroke-width: 0.25;
+    height: 100%;
+
+}
+
+.map path:hover {
+    fill: blue !important;
+
+    /* there is something special so i can consider the strokes inside as part of the shape */
+}
+
+.map .active {
+    fill: blue !important;
+}

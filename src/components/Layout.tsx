@@ -9,9 +9,8 @@ export interface LayoutProperties {
 
 export function Layout({ sidebar, children }: LayoutProperties) {
 
-    return (<div className={styles.containerArea}>
-        <div className={styles.headerArea}>
-            <Navbar className="bp3-dark" >
+    /*
+        <Navbar className="bp3-dark" >
                 <Navbar.Group align={Alignment.LEFT}>
                     <Navbar.Heading>COVID-19 Statistics</Navbar.Heading>
                 </Navbar.Group>
@@ -19,15 +18,21 @@ export function Layout({ sidebar, children }: LayoutProperties) {
 
                 </Navbar.Group>
             </Navbar>
+            */
+
+    return (<div className={styles.layout}>
+        <div className={styles.header}>
+
         </div>
-        <div className={styles.rightMainArea}>
-            <div className={styles.leftSidebarArea}>
+        <div className={styles.main}>
+            <div className={styles.sidebar}>
                 {sidebar}
             </div>
-            <div className={styles.contentArea}>
-                <div className={styles.content}>
-                    {children}
+            <div className={styles.content}>
+                <div>
+                    <h1>COVID-19 Statistics Application</h1>
                 </div>
+                {children}
             </div>
         </div>
     </div>);
