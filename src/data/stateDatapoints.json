@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Deaths (confirmed and probable)",
+    "description": "Total fatalities with confirmed OR probable COVID-19 case diagnosis (per the expanded CSTE case definition of April 5th, 2020 approved by the CDC). In states where the information is available, it only tracks fatalities with confirmed OR probable COVID-19 case diagnosis where on the death certificate, COVID-19 is listed as an underlying cause of death according to WHO guidelines.",
+    "key": "death"
+  },
+  {
+    "name": "Deaths (confirmed)",
+    "description": "Total fatalities with confirmed COVID-19 case diagnosis (per the expanded CSTE case definition of April 5th, 2020 approved by the CDC). In states where the information is available, it only tracks fatalities with confirmed COVID-19 case diagnosis where on the death certificate, COVID-19 is listed as an underlying cause of death according to WHO guidelines.",
+    "key": "deathConfirmed"
+  },
+  {
+    "name": "Deaths (increase)",
+    "description": "Daily increase in death, calculated from the previous day’s value.",
+    "key": "deathIncrease"
+  },
+  {
+    "name": "Deaths (probable)",
+    "description": "Total fatalities with probable COVID-19 case diagnosis (per the expanded CSTE case definition of April 5th, 2020 approved by the CDC). In states where the information is available, it only tracks fatalities with probable COVID-19 case diagnosis where on the death certificate, COVID-19 is listed as an underlying cause of death according to WHO guidelines.",
+    "key": "deathProbable"
+  },
+  {
+    "name": "Hospitalized Cumulative",
+    "description": "Total number of individuals who have ever been hospitalized with COVID-19. Definitions vary by state / territory. Where possible, we report hospitalizations with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "hospitalizedCumulative"
+  },
+  {
+    "name": "Hospitalized Currently",
+    "description": "Individuals who are currently hospitalized with COVID-19. Definitions vary by state / territory. Where possible, we report hospitalizations with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "hospitalizedCurrently"
+  },
+  {
+    "name": "Hospitalizations Increase",
+    "description": "Daily increase in hospitalizedCumulative, calculated from the previous day’s value.",
+    "key": "hospitalizedIncrease"
+  },
+  {
+    "name": "In ICU Cumulative",
+    "description": "Total number of individuals who have ever been hospitalized in the Intensive Care Unit with COVID-19. Definitions vary by state / territory. Where possible, we report patients in the ICU with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "inIcuCumulative"
+  },
+  {
+    "name": "In ICU Currently",
+    "description": "Individuals who are currently hospitalized in the Intensive Care Unit with COVID-19. Definitions vary by state / territory. Where possible, we report patients in the ICU with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "inIcuCurrently"
+  },
+  {
+    "name": "Negative PCR tests (people)",
+    "description": "Total number of unique people with a completed PCR test that returns negative. For states / territories that do not report this number directly, we compute it using one of several methods, depending on which data points the state provides. Due to complex reporting procedures, this number might be mixing units and therefore, at best, it should only be considered an estimate of the number of people with a completed PCR test that return negative.",
+    "key": "negative"
+  },
+  {
+    "name": "Negative antibody tests (specimens)",
+    "description": "The total number of completed antibody tests that return negative as reported by the state or territory.",
+    "key": "negativeTestsAntibody"
+  },
+  {
+    "name": "Negative antibody tests (people)",
+    "description": "The total number of unique people with completed antibody tests that return negative as reported by the state or territory.",
+    "key": "negativeTestsPeopleAntibody"
+  },
+  {
+    "name": "Negative PCR tests (specimens)",
+    "description": "Total number of completed PCR tests (or specimens tested) that return negative as reported by the state or territory. For states/territories that do not report this number directly, we compute it using one of several methods, depending on which data points the state provides. If we discover that a jurisdiction is including antigen tests in this metric, we will annotate that state or territory’s data accordingly.",
+    "key": "negativeTestsViral"
+  },
+  {
+    "name": "On Ventilator Cumulative",
+    "description": "Total number of individuals who have ever been hospitalized under advanced ventilation with COVID-19. Definitions vary by state / territory. Where possible, we report patients on ventilation with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "onVentilatorCumulative"
+  },
+  {
+    "name": "On Ventilator Currently",
+    "description": "Individuals who are currently hospitalized under advanced ventilation with COVID-19. Definitions vary by state / territory. Where possible, we report patients on ventilation with confirmed or probable COVID-19 cases per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "onVentilatorCurrently"
+  },
+  {
+    "name": "Pending",
+    "description": "Total number of viral tests that have not been completed as reported by the state or territory.",
+    "key": "pending"
+  },
+  {
+    "name": "Positive (confirmed and probable)",
+    "description": "Total number of people with confirmed OR probable cases of COVID-19 reported by the state or territory (per the expanded CSTE case definition of April 5th, 2020 approved by the CDC).\n\nA confirmed case is a person who has a positive test result from an FDA approved diagnostic molecular test.\n\nA probable case is a person who has presentable symptoms WITH epidemiological evidence or has BOTH a positive presumptive laboratory test AND also EITHER presentable symptoms OR epidemiological evidence, or who has been issued a death certificate listing COVID-19 as a cause of death or significant contributing cause of death with no confirmatory testing. Epidemiological evidence refers either to close proximity contact with a known case or travel history to an area with high disease incidence. According to the guidelines, FDA approved antibody and antigen tests are considered presumptive laboratory evidence and therefore only one potential part of the evidence required to classify a case as probable.",
+    "key": "positive"
+  },
+  {
+    "name": "Cases or Positive PCR tests (people)",
+    "description": "Total number of unique people with a completed PCR test that returns positive as reported by the state or territory. This is equivalent to a confirmed case as per the expanded CSTE case definition of April 5th, 2020 approved by the CDC.",
+    "key": "positiveCasesViral\n"
+  },
+  {
+    "name": "Cases or Positive increase",
+    "description": "The daily increase in API field positive, which measures Cases (confirmed plus probable) calculated based on the previous day’s value.",
+    "key": "positiveIncrease"
+  },
+  {
+    "name": "Positive antibody tests (specimens)",
+    "description": "Total number of completed antibody tests that return positive as reported by the state or territory.",
+    "key": "positiveTestsAntibody"
+  },
+  {
+    "name": "Positive antigen tests (specimens)",
+    "description": "Total number of completed antigen tests that return positive as reported by the state or territory.",
+    "key": "positiveTestsAntigen"
+  },
+  {
+    "name": "Positive antibody tests (people)",
+    "description": "The total number of unique people with completed antibody tests that return positive as reported by the state or territory.",
+    "key": "positiveTestsPeopleAntibody"
+  },
+  {
+    "name": "Positive antigen tests (people)",
+    "description": "Total number of unique people with a completed antigen test that returned positive as reported by the state or territory.",
+    "key": "positiveTestsPeopleAntigen"
+  },
+  {
+    "name": "Positive PCR tests (specimens)",
+    "description": "Total number of completed PCR tests (or specimens tested) that return positive as reported by the state or territory. If we discover that a jurisdiction is including antigen tests in this metric, we will annotate that state or territory’s data accordingly.",
+    "key": "positiveTestsViral"
+  },
+  {
+    "name": "Recovered",
+    "description": "Total number of people that are identified as recovered from COVID-19. States provide very disparate definitions on what constitutes a “recovered” COVID-19 case. Types of “recovered” cases include those who are discharged from hospitals, released from isolation after meeting CDC guidance on symptoms cessation, or those who have not been identified as fatalities after a number of days (30 or more) post disease onset. Specifics vary for each state or territory.",
+    "key": "recovered"
+  },
+  {
+    "name": "Total PCR tests (test encounters)",
+    "description": "Total number of people tested per day via PCR testing as reported by the state or territory. The count for this metric is incremented up by one for each day on which an individual person is tested, no matter how many specimens are collected from that person on that day. If an individual person is tested twice a day on three different days, this count will increment up by three. If we discover that a jurisdiction is including antigen tests in this metric, we will annotate that state or territory’s data accordingly.",
+    "key": "totalTestEncountersViral"
+  },
+  {
+    "name": "Total test results",
+    "description": "At the national level, this metric is a summary statistic which—because it sums figures from states reporting tests in test encounters with those reporting tests in specimens and in people—is an aggregate calculation of heterogeneous figures. Therefore, it should be contextualized as, at best, an estimate of national testing performance.\n\nIn most states, the totalTestResults field is currently computed by adding positive and negative values because, historically, some states do not report totals, and to work around different reporting cadences for cases and tests. In Colorado and Rhode Island, where reliable testing encounters figures are available with a complete time series, we directly report those figures in this field. We are in the process of switching all states over to use directly reported total figures, using a policy of preferring testing encounters, specimens, and people, in that order.",
+    "key": "totalTestResults"
+  },
+  {
+    "name": "New tests",
+    "description": "Daily increase in totalTestResults, calculated from the previous day’s value. This calculation includes all the caveats associated with Total tests/totalTestResults, and we recommend against using it at the state/territory level.",
+    "key": "totalTestResultsIncrease"
+  },
+  {
+    "name": "Total antibody tests (specimens)",
+    "description": "Total number of completed antibody tests as reported by the state or territory.",
+    "key": "totalTestsAntibody"
+  },
+  {
+    "name": "Total antigen tests (specimens)\n\n",
+    "description": "Total number of completed antigen tests, as reported by the state or territory.",
+    "key": "totalTestsAntigen"
+  },
+  {
+    "name": "Total antibody tests (people)",
+    "description": "The total number of unique people who have been tested at least once via antibody testing as reported by the state or territory.",
+    "key": "totalTestsPeopleAntibody"
+  },
+  {
+    "name": "Total antigen tests (people)",
+    "description": "Total number of unique people who have been tested at least once via antigen testing, as reported by the state or territory.",
+    "key": "totalTestsPeopleAntigen"
+  },
+  {
+    "name": "Total PCR tests (people)",
+    "description": "Total number of unique people tested at least once via PCR testing, as reported by the state or territory. The count for this metric is incremented up only the first time an individual person is tested and their result is reported. Future tests of the same person will not be added to this count.\n\nFor states with ambiguous annotations, we have assigned their total tests to this category. In the case where the state only provides negative cases, this field is calculated as the summation of people who tested positive (“Positive Cases (People”) and the number of people who tested negative (“Negative (People or Cases)”). If we discover that a jurisdiction is including antigen tests in this metric, we will annotate that state or territory’s data accordingly.",
+    "key": "totalTestsPeopleViral"
+  },
+  {
+    "name": "Total PCR tests (specimens)",
+    "description": "Total number of PCR tests (or specimens tested) as reported by the state or territory. The count for this metric is incremented up each time a specimen is tested and the result is reported. If we discover that a jurisdiction is including antigen tests in this metric, we will annotate that state or territory’s data accordingly.",
+    "key": "totalTestsViral"
+  }
+]

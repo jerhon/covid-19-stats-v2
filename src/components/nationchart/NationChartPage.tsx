@@ -14,6 +14,7 @@ export function NationChartPage() {
     const nationStatistics = useStore((s) => s.nationStatistics);
     let getData = useWrappedDispatch(() => getNationStatistics);
     const dataPoints = useStore((s) => s.nationFilter.dataPoints)
+    const selected = useStore((s) => s.nationFilter.selected);
 
     const filterOpen = useStore((s) => s.nationFilter.isOpen);
     const handleFilterOpenChanged = useWrappedDispatch(toggleOpenFilter);
@@ -32,11 +33,11 @@ export function NationChartPage() {
 
     return (<div className={styles.container}>
         <Card className={styles.filter} style={{marginBottom: "16px", width: "100%"}}>
-            <Filter open={filterOpen} onToggleOpen={handleFilterOpenChanged} dataPoints={dataPoints} onDataPointChanged={(dp) => handleSwitchFilterOption(dp.key)} />
+            <Filter selected={selected} open={filterOpen} onToggleOpen={handleFilterOpenChanged} dataPoints={dataPoints} onDataPointChanged={(dp) => handleSwitchFilterOption(dp.key)} />
         </Card>
         <Card className={styles.graph}>
             <div style={{fontWeight: "bolder", marginBottom: "16px"}}>Chart</div>
-            <Chart dataPoints={dataPoints} data={nationStatistics.data} />
+            <Chart dataPoints={dataPoints.filter((dp) => selected.includes(dp.key))} data={nationStatistics.data} />
         </Card>
 
     </div>);

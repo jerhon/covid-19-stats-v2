@@ -12,7 +12,6 @@ export interface ChartProperties<TData> {
 export function Chart<TData extends object>({dataPoints, data}: ChartProperties<TData>) {
 
     const lines = dataPoints
-        .filter((adp) => adp.selected)
         .map((adp) =>  <Line key={adp.key}
                             name={adp.name}
                             type="monotone"

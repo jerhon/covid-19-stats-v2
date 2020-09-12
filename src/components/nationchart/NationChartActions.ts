@@ -9,12 +9,12 @@ export interface ToggleOpenFilterAction {
 }
 export interface ToggleDataPointAction {
     type: typeof ActionTypes.TOGGLE_DATAPOINT,
-    dataPointKey: string
+    key: string
 }
 
 export function toggleOpenFilter() : ToggleOpenFilterAction  {
     return { type: ActionTypes.TOGGLE_OPEN_FILTER };
 }
 export function toggleDataPoint(dataPointKey: string) : ToggleDataPointAction {
-    return { type: ActionTypes.TOGGLE_DATAPOINT, dataPointKey };
+    return { type: ActionTypes.TOGGLE_DATAPOINT, key: dataPointKey };
 }
