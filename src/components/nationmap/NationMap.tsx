@@ -28,8 +28,7 @@ export interface Position {
 
 export function NationMap({onStateClicked, states, selected, onStateHover, renderPopup}: NationMapProperties) {
 
-    const [pos, setPos] = useState({ x: 0, y: 0 });
-    const [hoveredState, setState] = useState<StateAbbreviations | null>(null);
+    const [pos, setPos] = useState<Position>({ x: 0, y: 0 });
     const [vis, setVis] = useState(true);
     const handlePopupMove = useCallback(debounce(setPos, 50, {  leading: true  }), []);
 

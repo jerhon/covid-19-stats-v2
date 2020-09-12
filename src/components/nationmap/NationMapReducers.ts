@@ -2,7 +2,6 @@ import {createAsyncReducer} from "../../store/reducers/AsyncReducer";
 import {ActionTypes} from "../../Constants";
 import {StateStatistics} from "../../api/CovidTrackingProject";
 import dataPoints from "../../data/stateDatapoints.json";
-import {Action} from "redux";
 import {SelectedState, SetMapSelectedState, ToggleMapDatapointAction} from "./NationMapActions";
 
 export const stateStats = createAsyncReducer<StateStatistics[]>(ActionTypes.GET_STATE_STATS);

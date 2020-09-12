@@ -1,20 +1,18 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect } from "react";
 import {AllStateOptions, NationMap, StateAbbreviations} from "./NationMap";
-import {Card, Slider} from "@blueprintjs/core";
+import {Card } from "@blueprintjs/core";
 import styles from "./NationMapPage.module.css"
 import {useStore, useWrappedDispatch} from "../../store/Hooks";
 import * as actions from "./NationMapActions";
 import {StateStatistics} from "../../api/CovidTrackingProject";
 import {Filter} from "../filter/Filter";
-import {mapFilter} from "./NationMapReducers";
 import {SelectedState, setFilter, setSelectedState} from "./NationMapActions";
 
 function extractAndScaleData(stateData: StateStatistics[], stat: keyof StateStatistics) {
     const numeric = stateData.map((o) => ({ state: o.state, value: +(o[stat] ?? -1)}));
     const max = Math.max(...numeric.filter((x) => x).map((x) => x.value));
-    const min = Math.min(...numeric.filter((x) => x).map((x) => x.value));
 
-    const colors = numeric.map(({ state, value }) => {
+    return numeric.map(({ state, value }) => {
         let color = "#aaaaaa";
         if (value >= 0) {
             let scale = (Math.log(value) / Math.log(max) * .65) + (value / max * 0.35);
@@ -26,8 +24,6 @@ function extractAndScaleData(stateData: StateStatistics[], stat: keyof StateStat
             color
         }
     });
-
-    return colors;
 }
 
 function colorConvert(numeric: number) {
@@ -70,7 +66,7 @@ export function NationMapPage() {
     return (
         <>
             <Card>
-                <Filter  selected={[mapFilter.selected]} open={true} onToggleOpen={() => {}} onDataPointChanged={(dp, checked) => handleSetFilter(dp.key) }  dataPoints={mapFilter.dataPoints} />
+                <Filter  selected={[mapFilter.selected]} open={true} onToggleOpen={() => {}} onDataPointChanged={(dp) => handleSetFilter(dp.key) }  dataPoints={mapFilter.dataPoints} />
             </Card>
             <Card className={styles.mapPage}>
                 <div className={styles.mapWrapper}>

@@ -1,6 +1,5 @@
 import styles from "./Layout.module.css";
 import React from "react";
-import {Alignment, Navbar} from "@blueprintjs/core";
 
 export interface LayoutProperties {
     sidebar: JSX.Element;
